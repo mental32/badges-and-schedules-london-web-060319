@@ -7,7 +7,7 @@ def batch_badge_creator(names)
 end
 
 def assign_rooms(names)
-  names.map_with_index { |k, i| "Hello, #{k}! You\'ll be assigned to room #{i}!"}
+  names.map.each_with_index { |k, i| "Hello, #{k}! You\'ll be assigned to room #{i}!"}
 end
 
 def printer(attendees)
