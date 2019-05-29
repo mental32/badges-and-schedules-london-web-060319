@@ -12,7 +12,7 @@ end
 
 def printer(attendees)
   puts batch_badge_creator(attendees)
-  for item in assign_rooms(attendees) do
+  assign_rooms(attendees).each do |item|
     puts item
   end
 end
